@@ -66,6 +66,15 @@ fun FoodInformationScreen(
                         .height(200.dp),
                     contentScale = ContentScale1.Crop
                 )
+            } else {
+                AsyncImage(
+                    model = R.drawable.ic_launcher_background,
+                    contentDescription = "Fried Chicken",
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(200.dp),
+                    contentScale = ContentScale1.Crop
+                )
             }
 
             Column(
@@ -87,7 +96,7 @@ fun FoodInformationScreen(
                     .padding(16.dp)
             ) {
                 Text(
-                    text = "foodApiDto!!.message",
+                    text = "Fried Chicken",
                     style = MaterialTheme.typography.headlineSmall.copy(
                         fontSize = 24.sp,
                         color = Color.White
